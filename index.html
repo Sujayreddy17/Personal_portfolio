@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ce05e447de.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Electrical / Software Engineer</p>
+                <h1>I'm <span>Sujay R</span><br>From Banglore,India</h1>
+            </div>
+        </div>
+    </div>
+<!-- ------------------------about----------------------------------- -->   
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> I am an organised, efficient and hard working person, and am willing to discover and accept new ideas which can be put into practice effectively.
+                    I am a good listener and learner, able to communicate well with a group and on an individual level
+                    I am able to motivate and direct my talents and skills to meet objectives
+                    I always seek to achieve a high standard in whatever work I undertake </p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>App Development</span><br>Building Android/ios apps using android studio</li>
+                        <li><span>Web Development</span><br>Full stack web development</li>
+                        <li><span>Circuit Building</span><br>Building Electrical circuits using arduino boards</li>
+                        <li><span>Auto CAD</span><br>Designing electric circuits and components using autocad software</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>internship on Full stack web development</span><br>Web development on the topics like portfolio,temperature converter and a snooker club website</li>
+                        <li><span>Mini projects</span><br>designed and created mini project models based on the topics like CNC,Robotic arm, Wire less charging for Electric vehicles</li>
+                        <li><span>internship on Power bi </span><br>Global Olympics data analysis using power bi and virtual monitoring using cloud computing</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020-2024</span><br>BE in Electrical and Electronics and Engineering, Banglore</li>
+                        <li><span>2018-2020</span><br>Higher Secondary Education,Chintamani </li>
+                        <li><span>2018</span><br>Secondary Education,Chintamani </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------services--------->
+<div id="sevices">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design </h2>
+                <p>Designed a website for Full stack web development, Temperature converter and also for the Portfolio.</p>
+                <a href="https://github.com/Sujayreddy17?tab=repositories" target="_blank" class="btn btn2">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Project Design and developer </h2>
+                <p>Designed and devloped mini projects using Arduino on the topics like CNC Machine, Robotic Arm </p>
+                <a href="images/Projects designed and developed.pdf" download class="btn btn2">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Data Analytics  </h2>
+                <p>Designed and created the visualizations on Olympics award analysis using Power bi</p>
+                <a href="images/Powerbi final ppt.pdf" download class="btn btn2">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------portfolio----------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Global Olympics Analysis</h3>
+                    <p>The data analysis and visualizations of award winers all around the globe using exel and Power bi.</p>
+                    <a href="images/Powerbi final ppt.pdf" download class="fa-solid fa-up-right-from-square"></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Websites</h3>
+                    <p>Designed created various websites like website on snooker club and website for temperature conversion using full stack web developmen.</p>
+                    <a href="https://github.com/Sujayreddy17?tab=repositories" target="_blank" class="fa-solid fa-up-right-from-square"></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Arduino Based Projects</h3>
+                    <p>Projects on the topics like Robotic arm, Light Fidelity and 2D picture sketcher(Computer numeric control) using arduino and various electrical components</p>
+                    <a href="images/Projects designed and developed.pdf" download class="fa-solid fa-up-right-from-square"></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!------------------contact--------------->
+<div id="contact">
+<div class="container">
+    <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p> <i class="fa-solid fa-paper-plane"></i> sujayreddy172239@gmail.com</p>
+            <p> <i class="fa-solid fa-square-phone"></i> +91 9353921573</p>
+            
+            <div class="social-icons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="images/Resume.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="Email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="Submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p>copyright @ Sujay <i class="fa-solid fa-heart"></i> Made by portifolio</p>
+ </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+<form name="submit-to-google-sheet">
+</form>
+
+<script>
+const scriptURL = 'https://script.google.com/macros/s/AKfycbywTq49Wsyfg8tOhGX0uBSJ5oO21udnxzhmRcc9AuubOFjoyLQARrMlOcgVPTKNdKiw/exec'
+const form = document.forms['submit-to-google-sheet']
+const msg=document.getElementById("msg")
+form.addEventListener('submit', e => {
+e.preventDefault()
+fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  .then(response => {
+    msg.innerHTML="Message sent successfully"
+    setTimeout(function(){
+        msg.innerHTML=""
+    },5000)
+    form.reset()
+  })
+  .catch(error => console.error('Error!', error.message))
+})
+</script>
+</body>
+</html>
